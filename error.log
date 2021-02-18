@@ -1,0 +1,118 @@
+
+2021-02-16 11:22:58,371 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:523]
+2021-02-16 11:23:42,376 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:523]
+2021-02-17 10:48:39,649 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 10:50:05,017 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 10:51:26,308 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 11:39:26,324 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 11:47:06,685 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 12:51:16,930 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 12:51:56,075 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 12:52:43,048 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 12:53:08,011 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.query.filter(Show.start_time > current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:54:30,474 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.filter(Show.start_time < current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:55:10,095 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.filter(Show.start_time < current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:56:19,070 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.filter(Show.start_time > current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:56:20,008 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.filter(Show.start_time > current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:56:25,357 ERROR: Exception on /venues [GET] [in c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\h.mahmoud\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\FSND\projects\01_fyyur\starter_code\app.py", line 117, in venues
+    upcoming_shows = venue.shows.filter(Show.start_time > current_time).all()
+AttributeError: 'AppenderBaseQuery' object has no attribute 'query'
+2021-02-17 12:59:19,305 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-17 13:02:12,173 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:554]
+2021-02-18 11:49:41,077 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:583]
+2021-02-18 13:22:28,038 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:592]
+2021-02-18 13:22:57,569 INFO: errors [in C:\FSND\projects\01_fyyur\starter_code\app.py:592]
